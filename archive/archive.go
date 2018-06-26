@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/cihub/seelog/archive/gzip"
+	"github.com/kingbuffalo/seelog/archive/gzip"
 )
 
 // Reader is the interface for reading files from an archive.

@@ -6,11 +6,11 @@ import (
 	"io"
 	"testing"
 
-	"github.com/cihub/seelog/archive"
-	"github.com/cihub/seelog/archive/gzip"
-	"github.com/cihub/seelog/archive/tar"
-	"github.com/cihub/seelog/archive/zip"
-	"github.com/cihub/seelog/io/iotest"
+	"github.com/kingbuffalo/seelog/archive"
+	"github.com/kingbuffalo/seelog/archive/gzip"
+	"github.com/kingbuffalo/seelog/archive/tar"
+	"github.com/kingbuffalo/seelog/archive/zip"
+	"github.com/kingbuffalo/seelog/io/iotest"
 )
 
 const (

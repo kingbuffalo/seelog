@@ -266,6 +266,14 @@ func Info(v ...interface{}) {
 	Current.infoWithCallDepth(staticFuncCallDepth, newLogMessage(v))
 }
 
+//Without error
+func WarnWE(v ...interface{}) {
+	pkgOperationsMutex.Lock()
+	defer pkgOperationsMutex.Unlock()
+	message := newLogMessage(v)
+	Current.warnWithCallDepth(staticFuncCallDepth, message)
+}
+
 // Warn formats message using the default formats for its operands and writes to default logger with log level = Warn
 func Warn(v ...interface{}) error {
 	pkgOperationsMutex.Lock()
